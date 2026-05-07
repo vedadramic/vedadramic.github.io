@@ -4,18 +4,25 @@
         <img src="/profile.png" alt="Vedad Ramic" class="logo-avatar">
         <span>Vedad Ramić</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#/" class="nav-link active">Home</a></li>
-        <li><a href="#/about" class="nav-link">About</a></li>
-        <li><a href="#/projects" class="nav-link">Projects</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button id="download-cv-btn" class="nav-download-btn" style="border: none; cursor: pointer; font-family: inherit;">
-          Download CV <span class="dropdown-arrow">↓</span>
-        </button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="primary-navigation">
+        <ul class="nav-links">
+          <li><a href="#/" class="nav-link active">Home</a></li>
+          <li><a href="#/about" class="nav-link">About</a></li>
+          <li><a href="#/projects" class="nav-link">Projects</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="download-cv-btn" class="nav-download-btn" type="button">
+            Download CV <span class="dropdown-arrow">↓</span>
+          </button>
+        </div>
       </div>
     </div>
-  `,setTimeout(()=>{let n=e.querySelector(`#download-cv-btn`);n&&n.addEventListener(`click`,t)},0),e}function t(){let e=document.createElement(`div`);e.innerHTML=`
+  `,setTimeout(()=>{let n=e.querySelector(`.nav-toggle`),r=()=>{e.classList.remove(`menu-open`),n&&n.setAttribute(`aria-expanded`,`false`)};n&&n.addEventListener(`click`,()=>{let t=e.classList.toggle(`menu-open`);n.setAttribute(`aria-expanded`,String(t))}),e.querySelectorAll(`.nav-links a`).forEach(e=>{e.addEventListener(`click`,r)});let i=e.querySelector(`#download-cv-btn`);i&&i.addEventListener(`click`,()=>{t(),r()})},0),e}function t(){let e=document.createElement(`div`);e.innerHTML=`
     <div style="font-family: Arial, sans-serif; padding: 40px; background: white; color: #333;">
       <!-- Header -->
       <div style="text-align: center; margin-bottom: 30px; border-bottom: 3px solid #0f3f6b; padding-bottom: 20px;">
