@@ -1,4 +1,4 @@
-(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();function e(){let e=document.createElement(`nav`);return e.innerHTML=`
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`Vedad_Ramic_CV.pdf`,t=`/downloads/${e}`;function n(){let n=document.createElement(`a`);n.href=t,n.download=e,n.rel=`noopener`,n.style.display=`none`,document.body.appendChild(n),n.click(),n.remove()}function r(){let e=document.createElement(`nav`);return e.innerHTML=`
     <div class="nav-container">
       <a href="#/" class="logo">
         <img src="/profile.png" alt="Vedad Ramic" class="logo-avatar">
@@ -22,145 +22,7 @@
         </div>
       </div>
     </div>
-  `,setTimeout(()=>{let n=e.querySelector(`.nav-toggle`),r=()=>{e.classList.remove(`menu-open`),n&&n.setAttribute(`aria-expanded`,`false`)};n&&n.addEventListener(`click`,()=>{let t=e.classList.toggle(`menu-open`);n.setAttribute(`aria-expanded`,String(t))}),e.querySelectorAll(`.nav-links a`).forEach(e=>{e.addEventListener(`click`,r)});let i=e.querySelector(`#download-cv-btn`);i&&i.addEventListener(`click`,()=>{t(),r()})},0),e}function t(){let e=document.createElement(`div`);e.innerHTML=`
-    <div style="font-family: Arial, sans-serif; padding: 40px; background: white; color: #333;">
-      <!-- Header -->
-      <div style="text-align: center; margin-bottom: 30px; border-bottom: 3px solid #0f3f6b; padding-bottom: 20px;">
-        <h1 style="margin: 0 0 5px; font-size: 28px; color: #0f3f6b;">Vedad Ramic</h1>
-        <p style="margin: 0 0 10px; font-size: 14px; color: #666;">
-          Computer Science Student | Full-Stack Developer | Tech Enthusiast
-        </p>
-        <p style="margin: 5px 0; font-size: 12px;">
-          Email: vedad.ramic@example.com | Phone: +387 XXXXXXXXX | Doboj, Bosnia and Herzegovina
-        </p>
-        <p style="margin: 5px 0; font-size: 12px;">
-          LinkedIn: linkedin.com/in/vedad-ramic | GitHub: github.com/vedadramic
-        </p>
-      </div>
-      
-      <!-- Professional Summary -->
-      <div style="margin-bottom: 25px;">
-        <h2 style="margin: 0 0 10px; font-size: 16px; color: #0f3f6b; border-bottom: 2px solid #0f3f6b; padding-bottom: 5px;">Professional Summary</h2>
-        <p style="margin: 10px 0; font-size: 12px; line-height: 1.6;">
-          Computer Science student with strong passion for web development and problem-solving. Experienced in building modern web applications using full-stack technologies. Active community member with proven leadership skills. Seeking internship opportunities to apply technical knowledge and contribute to meaningful projects.
-        </p>
-      </div>
-      
-      <!-- Education -->
-      <div style="margin-bottom: 25px;">
-        <h2 style="margin: 0 0 10px; font-size: 16px; color: #0f3f6b; border-bottom: 2px solid #0f3f6b; padding-bottom: 5px;">Education</h2>
-        <div style="margin: 10px 0;">
-          <p style="margin: 0; font-weight: bold; font-size: 12px;">Computer Science</p>
-          <p style="margin: 3px 0; font-size: 11px; color: #666;">University Name | Expected Graduation: 2025/2026</p>
-          <ul style="margin: 5px 0 0; padding-left: 20px; font-size: 11px;">
-            <li>Relevant Coursework: Web Development, Databases, Software Engineering, Algorithms, Data Structures</li>
-            <li>Active participation in faculty projects and academic competitions</li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Technical Skills -->
-      <div style="margin-bottom: 25px;">
-        <h2 style="margin: 0 0 10px; font-size: 16px; color: #0f3f6b; border-bottom: 2px solid #0f3f6b; padding-bottom: 5px;">Technical Skills</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 11px;">
-          <div>
-            <p style="margin: 0; font-weight: bold; margin-bottom: 3px;">Frontend Development</p>
-            <p style="margin: 0;">HTML, CSS, JavaScript, React, Responsive Design, UI/UX Principles</p>
-          </div>
-          <div>
-            <p style="margin: 0; font-weight: bold; margin-bottom: 3px;">Backend Development</p>
-            <p style="margin: 0;">Node.js, Express.js, REST APIs, Database Design, SQL</p>
-          </div>
-          <div>
-            <p style="margin: 0; font-weight: bold; margin-bottom: 3px;">Programming Languages</p>
-            <p style="margin: 0;">JavaScript, Python, Java, SQL</p>
-          </div>
-          <div>
-            <p style="margin: 0; font-weight: bold; margin-bottom: 3px;">Tools & Technologies</p>
-            <p style="margin: 0;">Git, GitHub, Firebase, Azure, VS Code, npm/Yarn</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Projects -->
-      <div style="margin-bottom: 25px;">
-        <h2 style="margin: 0 0 10px; font-size: 16px; color: #0f3f6b; border-bottom: 2px solid #0f3f6b; padding-bottom: 5px;">Projects</h2>
-        
-        <div style="margin: 10px 0;">
-          <p style="margin: 0; font-weight: bold; font-size: 12px;">E-Diploma Management System</p>
-          <p style="margin: 3px 0; font-size: 11px; color: #0f3f6b;">Faculty Project | Technologies: JavaScript, Node.js, Database</p>
-          <p style="margin: 3px 0; font-size: 11px;">Digital diploma management system for secure creation and distribution of academic credentials. Implemented authentication, user management, and diploma generation features.</p>
-        </div>
-        
-        <div style="margin: 10px 0;">
-          <p style="margin: 0; font-weight: bold; font-size: 12px;">Barbershop Management Application</p>
-          <p style="margin: 3px 0; font-size: 11px; color: #0f3f6b;">Faculty Project | Technologies: React, Node.js, SQL</p>
-          <p style="margin: 3px 0; font-size: 11px;">Comprehensive booking system with customer management and service scheduling. Developed full-stack features for appointment handling and real-time updates.</p>
-        </div>
-        
-        <div style="margin: 10px 0;">
-          <p style="margin: 0; font-weight: bold; font-size: 12px;">Smetovi (Cleaning Application)</p>
-          <p style="margin: 3px 0; font-size: 11px; color: #0f3f6b;">Practice Project | Technologies: JavaScript, Local Storage</p>
-          <p style="margin: 3px 0; font-size: 11px;">Interactive task management application for household organization. Features data persistence and responsive interface design.</p>
-        </div>
-        
-        <div style="margin: 10px 0;">
-          <p style="margin: 0; font-weight: bold; font-size: 12px;">Public Transportation System</p>
-          <p style="margin: 3px 0; font-size: 11px; color: #0f3f6b;">Practice Project | Technologies: JavaScript, APIs</p>
-          <p style="margin: 3px 0; font-size: 11px;">Real-time bus schedules and route information system. Integrated external APIs and implemented interactive maps for better UX.</p>
-        </div>
-      </div>
-      
-      <!-- Experience & Achievements -->
-      <div style="margin-bottom: 25px;">
-        <h2 style="margin: 0 0 10px; font-size: 16px; color: #0f3f6b; border-bottom: 2px solid #0f3f6b; padding-bottom: 5px;">Experience & Achievements</h2>
-        <ul style="margin: 10px 0; padding-left: 20px; font-size: 11px;">
-          <li style="margin: 5px 0;"><strong>Youth Bank Doboj Jug</strong> - Active Member | Developed project leadership and organizational skills</li>
-          <li style="margin: 5px 0;"><strong>3x3 Basketball Tournament</strong> - Organizer | Demonstrated event coordination and team management abilities</li>
-          <li style="margin: 5px 0;"><strong>Radio Amateur Club</strong> - Licensed Member (E75VRM) | Enhanced communication and technical skills</li>
-          <li style="margin: 5px 0;"><strong>Faculty Projects</strong> - Multiple contributions | Worked on real-world problems with practical applications</li>
-        </ul>
-      </div>
-      
-      <!-- Key Competencies -->
-      <div style="margin-bottom: 25px;">
-        <h2 style="margin: 0 0 10px; font-size: 16px; color: #0f3f6b; border-bottom: 2px solid #0f3f6b; padding-bottom: 5px;">Key Competencies</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 11px;">
-          <div>
-            <p style="margin: 0; font-weight: bold; margin-bottom: 3px;">Technical</p>
-            <ul style="margin: 0; padding-left: 20px;">
-              <li>Full-Stack Web Development</li>
-              <li>Problem-Solving</li>
-              <li>Software Architecture</li>
-              <li>Version Control (Git)</li>
-            </ul>
-          </div>
-          <div>
-            <p style="margin: 0; font-weight: bold; margin-bottom: 3px;">Soft Skills</p>
-            <ul style="margin: 0; padding-left: 20px;">
-              <li>Communication</li>
-              <li>Project Leadership</li>
-              <li>Teamwork</li>
-              <li>Time Management</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Languages -->
-      <div style="margin-bottom: 25px;">
-        <h2 style="margin: 0 0 10px; font-size: 16px; color: #0f3f6b; border-bottom: 2px solid #0f3f6b; padding-bottom: 5px;">Languages</h2>
-        <p style="margin: 10px 0; font-size: 11px;">
-          <strong>English</strong> - Fluent | <strong>Bosnian</strong> - Native | <strong>Serbian/Croatian</strong> - Fluent
-        </p>
-      </div>
-      
-      <!-- Footer -->
-      <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 10px; color: #999;">
-        <p style="margin: 0;">References and additional information available upon request</p>
-      </div>
-    </div>
-  `,window.html2pdf().set({margin:10,filename:`Vedad_Ramic_CV.pdf`,image:{type:`jpeg`,quality:.98},html2canvas:{scale:2},jsPDF:{orientation:`portrait`,unit:`mm`,format:`a4`}}).from(e).save()}function n(){let e=document.createElement(`footer`);return e.innerHTML=`
+  `,setTimeout(()=>{let t=e.querySelector(`.nav-toggle`),r=()=>{e.classList.remove(`menu-open`),t&&t.setAttribute(`aria-expanded`,`false`)};t&&t.addEventListener(`click`,()=>{let n=e.classList.toggle(`menu-open`);t.setAttribute(`aria-expanded`,String(n))}),e.querySelectorAll(`.nav-links a`).forEach(e=>{e.addEventListener(`click`,r)});let i=e.querySelector(`#download-cv-btn`);i&&i.addEventListener(`click`,()=>{n(),r()})},0),e}function i(){let e=document.createElement(`footer`);return e.innerHTML=`
     <div class="footer-container">
       <div class="footer-content">
         <div class="social-links">
@@ -180,7 +42,7 @@
         <p>&copy; 2026 Vedad Ramic. All rights reserved.</p>
       </div>
     </div>
-  `,e}function r(t){t.innerHTML=``;let r=e();t.appendChild(r);let i=document.createElement(`main`);i.className=`home-main`,i.innerHTML=`
+  `,e}function a(e){e.innerHTML=``;let t=r();e.appendChild(t);let n=document.createElement(`main`);n.className=`home-main`,n.innerHTML=`
     <section class="hero">
       <div class="hero-image">
         <img src="/profile.png" alt="Vedad Ramic" class="hero-avatar">
@@ -192,7 +54,7 @@
         </p>
       </div>
     </section>
-  `,t.appendChild(i);let a=n();t.appendChild(a)}function i(t){t.innerHTML=``;let r=e();t.appendChild(r);let i=document.createElement(`main`);i.className=`about-main`,i.innerHTML=`
+  `,e.appendChild(n);let a=i();e.appendChild(a)}function o(e){e.innerHTML=``;let t=r();e.appendChild(t);let n=document.createElement(`main`);n.className=`about-main`,n.innerHTML=`
     <section class="about-hero">
       <div class="about-hero-copy">
         <h1>About <span class="about-title-accent">Me</span></h1>
@@ -276,7 +138,7 @@
         </p>
       </div>
     </section>
-  `,t.appendChild(i);let a=n();t.appendChild(a)}function a(t){t.innerHTML=``;let r=e();t.appendChild(r);let i=document.createElement(`main`);i.className=`projects-main`,i.innerHTML=`
+  `,e.appendChild(n);let a=i();e.appendChild(a)}function s(e){e.innerHTML=``;let t=r();e.appendChild(t);let n=document.createElement(`main`);n.className=`projects-main`,n.innerHTML=`
     <section class="projects-hero">
         <h1><span class="projects-title-main">Pro</span><span class="projects-title-accent">jects</span></h1>
       <p class="section-subtitle">Several projects I have worked on independently and as part of a team.</p>
@@ -335,7 +197,7 @@
         </article>
       </div>
     </section>
-  `,t.appendChild(i);let a=n();t.appendChild(a)}function o(t){t.innerHTML=``;let r=e();t.appendChild(r);let i=document.createElement(`main`);i.innerHTML=`
+  `,e.appendChild(n);let a=i();e.appendChild(a)}function c(e){e.innerHTML=``;let t=r();e.appendChild(t);let a=document.createElement(`main`);a.innerHTML=`
     <div style="text-align: center; margin-bottom: 2rem;">
       <h1>My Resume</h1>
       <p style="color: var(--text); font-size: 1rem;">
@@ -496,4 +358,4 @@
         <p style="margin: 0;">References and additional information available upon request</p>
       </div>
     </section>
-  `,t.appendChild(i),i.querySelector(`#download-cv`).addEventListener(`click`,s);let a=n();t.appendChild(a)}function s(){let e=document.querySelector(`#cv-content`);window.html2pdf===void 0?(alert(`For PDF download, please use the browser print function (Ctrl+P or Cmd+P) and select "Save as PDF"`),window.print()):window.html2pdf().set({margin:10,filename:`Vedad_Ramic_CV.pdf`,image:{type:`jpeg`,quality:.98},html2canvas:{scale:2},jsPDF:{orientation:`portrait`,unit:`mm`,format:`a4`}}).from(e).save()}var c={"/":r,"/about":i,"/projects":a,"/cv":o};function l(){return(window.location.hash||`#/`).replace(`#`,``)||`/`}function u(){let e=c[l()]||r,t=document.querySelector(`#app`);t.innerHTML=``,e(t),d()}function d(){let e=l();document.querySelectorAll(`nav a`).forEach(t=>{t.classList.remove(`active`);let n=t.getAttribute(`href`);(e===`/`&&n===`/`||e===n)&&t.classList.add(`active`)})}window.addEventListener(`hashchange`,u),u();
+  `,e.appendChild(a),a.querySelector(`#download-cv`).addEventListener(`click`,n);let o=i();e.appendChild(o)}var l={"/":a,"/about":o,"/projects":s,"/cv":c};function u(){return(window.location.hash||`#/`).replace(`#`,``)||`/`}function d(){let e=l[u()]||a,t=document.querySelector(`#app`);t.innerHTML=``,e(t),f()}function f(){let e=u();document.querySelectorAll(`nav a`).forEach(t=>{t.classList.remove(`active`);let n=t.getAttribute(`href`);(e===`/`&&n===`/`||e===n)&&t.classList.add(`active`)})}window.addEventListener(`hashchange`,d),d();
