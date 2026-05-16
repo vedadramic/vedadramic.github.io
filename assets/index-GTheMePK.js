@@ -95,7 +95,7 @@
         <h2>Technologies I Use and Learn</h2>
       </div>
       <div class="about-grid about-tech-grid">
-        <article class="card about-tech-card about-tech-card--cyan">
+        <article class="card about-tech-card">
           <h3>Frontend</h3>
           <div class="tag-list">
             <span>HTML</span>
@@ -140,7 +140,7 @@
     </section>
   `,e.appendChild(n);let a=i();e.appendChild(a)}function s(e){e.innerHTML=``;let t=r();e.appendChild(t);let n=document.createElement(`main`);n.className=`projects-main`,n.innerHTML=`
     <section class="projects-hero">
-        <h1><span class="projects-title-main">Pro</span><span class="projects-title-accent">jects</span></h1>
+        <h1>Projects</h1>
       <p class="section-subtitle">Several projects I have worked on independently and as part of a team.</p>
     </section>
     
@@ -197,97 +197,4 @@
         </article>
       </div>
     </section>
-  `,e.appendChild(n);let a=i();e.appendChild(a)}var c={intro:`text-align: center; margin-bottom: 2rem;`,introText:`color: var(--text); font-size: 1rem;`,introButton:`margin-top: 1rem;`,panel:`background: var(--bg-secondary); padding: 2rem; border-radius: 12px; border: 1px solid var(--border);`,header:`text-align: center; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 2px solid var(--accent);`,headerName:`margin: 0 0 0.5rem; font-size: 2rem;`,headerTagline:`margin: 0 0 1rem; color: var(--text);`,headerMeta:`margin: 0; font-size: 0.95rem;`,headerLinks:`margin: 0.5rem 0 0;`,section:`margin-bottom: 2rem;`,sectionTitle:`color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;`,sectionBody:`margin: 1rem 0 0;`,skillGrid:`display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;`,competencyGrid:`display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;`,projectBlock:`margin-top: 1rem;`,projectMeta:`margin: 0 0 0.5rem; color: var(--secondary); font-size: 0.95rem;`,list:`margin-top: 0.5rem; padding-left: 1.5rem;`,footer:`text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--text);`},l=[{title:`Frontend Development`,items:[`HTML`,`CSS`,`JavaScript`,`React`,`Responsive Design`,`UI/UX Principles`]},{title:`Backend Development`,items:[`Node.js`,`Express.js`,`REST APIs`,`Database Design`,`SQL`]},{title:`Programming Languages`,items:[`JavaScript`,`Python`,`Java`,`SQL`]},{title:`Tools & Technologies`,items:[`Git`,`GitHub`,`Firebase`,`Azure`,`VS Code`,`npm/Yarn`]}],u=[{title:`E-Diploma Management System`,meta:`Faculty Project | Technologies: JavaScript, Node.js, Database`,description:`Digital diploma management system for secure creation and distribution of academic credentials. Implemented authentication, user management, and diploma generation features.`},{title:`Barbershop Management Application`,meta:`Faculty Project | Technologies: React, Node.js, SQL`,description:`Comprehensive booking system with customer management and service scheduling. Developed full-stack features for appointment handling and real-time updates.`},{title:`Smetovi (Cleaning Application)`,meta:`Practice Project | Technologies: JavaScript, Local Storage`,description:`Interactive task management application for household organization. Features data persistence and responsive interface design.`},{title:`Public Transportation System`,meta:`Practice Project | Technologies: JavaScript, APIs`,description:`Real-time bus schedules and route information system. Integrated external APIs and implemented interactive maps for better UX.`}],d=[`<strong>Youth Bank Doboj Jug</strong> - Active Member | Developed project leadership and organizational skills`,`<strong>3x3 Basketball Tournament</strong> - Organizer | Demonstrated event coordination and team management abilities`,`<strong>Radio Amateur Club</strong> - Licensed Member (E75VRM) | Enhanced communication and technical skills`,`<strong>Faculty Projects</strong> - Multiple contributions | Worked on real-world problems with practical applications`],f=[{title:`Technical`,items:[`Full-Stack Web Development`,`Problem-Solving`,`Software Architecture`,`Version Control (Git)`]},{title:`Soft Skills`,items:[`Communication`,`Project Leadership`,`Teamwork`,`Time Management`]}];function p(e,t){return`
-    <div style="${c.section}">
-      <h2 style="${c.sectionTitle}">${e}</h2>
-      ${t}
-    </div>
-  `}function m(e){return`
-    <ul style="${c.list}">
-      ${e.map(e=>`<li>${e}</li>`).join(``)}
-    </ul>
-  `}function h(e){return`
-    <div style="${c.skillGrid}">
-      ${e.map(e=>`
-            <div>
-              <h4 style="margin-top: 0;">${e.title}</h4>
-              <p style="margin: 0;">${e.items.join(`, `)}</p>
-            </div>
-          `).join(``)}
-    </div>
-  `}function g(e){return`
-    <div style="${c.competencyGrid}">
-      ${e.map(e=>`
-            <div>
-              <h4 style="margin-top: 0;">${e.title}</h4>
-              <ul style="margin: 0; padding-left: 1.5rem;">
-                ${e.items.map(e=>`<li>${e}</li>`).join(``)}
-              </ul>
-            </div>
-          `).join(``)}
-    </div>
-  `}function _(e){return`
-    <div style="${c.projectBlock}">
-      <h4 style="margin: 0 0 0.5rem;">${e.title}</h4>
-      <p style="${c.projectMeta}">${e.meta}</p>
-      <p style="margin: 0;">${e.description}</p>
-    </div>
-  `}function v(e){e.innerHTML=``;let t=r();e.appendChild(t);let a=document.createElement(`main`);a.innerHTML=`
-    <div style="${c.intro}">
-      <h1>My Resume</h1>
-      <p style="${c.introText}">
-        Download or view my professional resume below
-      </p>
-      <button id="download-cv" class="btn btn-primary" style="${c.introButton}">
-        📥 Download as PDF
-      </button>
-    </div>
-    
-    <section id="cv-content" style="${c.panel}">
-      <div style="${c.header}">
-        <h1 style="${c.headerName}">Vedad Ramic</h1>
-        <p style="${c.headerTagline}">
-          Computer Science Student | Full-Stack Developer | Tech Enthusiast
-        </p>
-        <p style="${c.headerMeta}">
-          <strong>Email:</strong> vedad.ramic@example.com | 
-          <strong>Phone:</strong> +387 (your number) | 
-          <strong>Location:</strong> Doboj, Bosnia and Herzegovina
-        </p>
-        <p style="${c.headerLinks}">
-          <strong>LinkedIn:</strong> linkedin.com/in/vedad-ramic | 
-          <strong>GitHub:</strong> github.com/vedadramic
-        </p>
-      </div>
-      
-      ${p(`Professional Summary`,`<p style="${c.sectionBody}">
-          Computer Science student with strong passion for web development and problem-solving. Experienced in building modern web applications using full-stack technologies. Active community member with proven leadership skills. Seeking internship opportunities to apply technical knowledge and contribute to meaningful projects.
-        </p>`)}
-      
-      ${p(`Education`,`
-        <div style="${c.sectionBody}">
-          <h3 style="margin: 0;">Computer Science</h3>
-          <p style="margin: 0.25rem 0; color: var(--text);">
-            <strong>University Name</strong> | Expected Graduation: 2025/2026
-          </p>
-          ${m([`Relevant Coursework: Web Development, Databases, Software Engineering, Algorithms, Data Structures`,`Active participation in faculty projects and academic competitions`])}
-        </div>
-        `)}
-      
-      ${p(`Technical Skills`,h(l))}
-      
-      ${p(`Projects`,u.map(_).join(``))}
-      
-      ${p(`Experience & Achievements`,m(d))}
-      
-      ${p(`Key Competencies`,g(f))}
-      
-      ${p(`Languages`,`<p style="${c.sectionBody}">
-          <strong>English</strong> - Fluent | <strong>Bosnian</strong> - Native | <strong>Serbian/Croatian</strong> - Fluent
-        </p>`)}
-
-      <div style="${c.footer}">
-        <p style="margin: 0;">References and additional information available upon request</p>
-      </div>
-    </section>
-  `,e.appendChild(a),a.querySelector(`#download-cv`)?.addEventListener(`click`,n);let o=i();e.appendChild(o)}var y={"/":a,"/about":o,"/projects":s,"/cv":v};function b(){return(window.location.hash||`#/`).replace(`#`,``)||`/`}function x(){let e=y[b()]||a,t=document.querySelector(`#app`);t&&(e(t),S())}function S(){let e=b();document.querySelectorAll(`nav .nav-links a`).forEach(t=>{let n=(t.getAttribute(`href`)||``).replace(`#`,``)||`/`;t.classList.toggle(`active`,n===e)})}window.addEventListener(`hashchange`,x),x();
+  `,e.appendChild(n);let a=i();e.appendChild(a)}var c={"/":a,"/about":o,"/projects":s};function l(){return(window.location.hash||`#/`).replace(`#`,``)||`/`}function u(){let e=c[l()]||a,t=document.querySelector(`#app`);t&&(e(t),d())}function d(){let e=l();document.querySelectorAll(`nav .nav-links a`).forEach(t=>{let n=(t.getAttribute(`href`)||``).replace(`#`,``)||`/`;t.classList.toggle(`active`,n===e)})}window.addEventListener(`hashchange`,u),u();
