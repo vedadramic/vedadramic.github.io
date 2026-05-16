@@ -1,4 +1,4 @@
-(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`Vedad_Ramic_CV.pdf`,t=`/downloads/${e}`;function n(){let n=document.createElement(`a`);n.href=t,n.download=e,n.rel=`noopener`,n.style.display=`none`,document.body.appendChild(n),n.click(),n.remove()}function r(){let e=document.createElement(`nav`);return e.innerHTML=`
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`Vedad_Ramic_CV.pdf`,t=`/downloads/${e}`;function n(){let n=document.createElement(`a`);n.href=t,n.download=e,n.rel=`noopener`,n.style.display=`none`,document.body.appendChild(n),n.click(),n.remove()}function r(){let e=document.createElement(`nav`);e.innerHTML=`
     <div class="nav-container">
       <a href="#/" class="logo">
         <img src="/profile.png" alt="Vedad Ramic" class="logo-avatar">
@@ -11,7 +11,7 @@
       </button>
       <div class="nav-menu" id="primary-navigation">
         <ul class="nav-links">
-          <li><a href="#/" class="nav-link active">Home</a></li>
+          <li><a href="#/" class="nav-link">Home</a></li>
           <li><a href="#/about" class="nav-link">About</a></li>
           <li><a href="#/projects" class="nav-link">Projects</a></li>
         </ul>
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-  `,setTimeout(()=>{let t=e.querySelector(`.nav-toggle`),r=()=>{e.classList.remove(`menu-open`),t&&t.setAttribute(`aria-expanded`,`false`)};t&&t.addEventListener(`click`,()=>{let n=e.classList.toggle(`menu-open`);t.setAttribute(`aria-expanded`,String(n))}),e.querySelectorAll(`.nav-links a`).forEach(e=>{e.addEventListener(`click`,r)});let i=e.querySelector(`#download-cv-btn`);i&&i.addEventListener(`click`,()=>{n(),r()})},0),e}function i(){let e=document.createElement(`footer`);return e.innerHTML=`
+  `;let t=e.querySelector(`.nav-toggle`),r=()=>{e.classList.remove(`menu-open`),t?.setAttribute(`aria-expanded`,`false`)};return t?.addEventListener(`click`,()=>{let n=e.classList.toggle(`menu-open`);t.setAttribute(`aria-expanded`,String(n))}),e.querySelectorAll(`.nav-links a`).forEach(e=>{e.addEventListener(`click`,r)}),e.querySelector(`#download-cv-btn`)?.addEventListener(`click`,()=>{n(),r()}),e}function i(){let e=document.createElement(`footer`);return e.innerHTML=`
     <div class="footer-container">
       <div class="footer-content">
         <div class="social-links">
@@ -64,11 +64,11 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section>
       <div class="section-title">
         <h2>Background</h2>
       </div>
-      <div class="about-grid about-background-grid">
+      <div class="about-grid">
         <article class="card about-card about-card--emerald">
           <h3>Education</h3>
           <p>
@@ -90,7 +90,7 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section>
       <div class="section-title">
         <h2>Technologies I Use and Learn</h2>
       </div>
@@ -128,7 +128,7 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section>
       <div class="section-title">
         <h2>Contact Me</h2>
       </div>
@@ -197,165 +197,97 @@
         </article>
       </div>
     </section>
-  `,e.appendChild(n);let a=i();e.appendChild(a)}function c(e){e.innerHTML=``;let t=r();e.appendChild(t);let a=document.createElement(`main`);a.innerHTML=`
-    <div style="text-align: center; margin-bottom: 2rem;">
+  `,e.appendChild(n);let a=i();e.appendChild(a)}var c={intro:`text-align: center; margin-bottom: 2rem;`,introText:`color: var(--text); font-size: 1rem;`,introButton:`margin-top: 1rem;`,panel:`background: var(--bg-secondary); padding: 2rem; border-radius: 12px; border: 1px solid var(--border);`,header:`text-align: center; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 2px solid var(--accent);`,headerName:`margin: 0 0 0.5rem; font-size: 2rem;`,headerTagline:`margin: 0 0 1rem; color: var(--text);`,headerMeta:`margin: 0; font-size: 0.95rem;`,headerLinks:`margin: 0.5rem 0 0;`,section:`margin-bottom: 2rem;`,sectionTitle:`color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;`,sectionBody:`margin: 1rem 0 0;`,skillGrid:`display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;`,competencyGrid:`display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;`,projectBlock:`margin-top: 1rem;`,projectMeta:`margin: 0 0 0.5rem; color: var(--secondary); font-size: 0.95rem;`,list:`margin-top: 0.5rem; padding-left: 1.5rem;`,footer:`text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--text);`},l=[{title:`Frontend Development`,items:[`HTML`,`CSS`,`JavaScript`,`React`,`Responsive Design`,`UI/UX Principles`]},{title:`Backend Development`,items:[`Node.js`,`Express.js`,`REST APIs`,`Database Design`,`SQL`]},{title:`Programming Languages`,items:[`JavaScript`,`Python`,`Java`,`SQL`]},{title:`Tools & Technologies`,items:[`Git`,`GitHub`,`Firebase`,`Azure`,`VS Code`,`npm/Yarn`]}],u=[{title:`E-Diploma Management System`,meta:`Faculty Project | Technologies: JavaScript, Node.js, Database`,description:`Digital diploma management system for secure creation and distribution of academic credentials. Implemented authentication, user management, and diploma generation features.`},{title:`Barbershop Management Application`,meta:`Faculty Project | Technologies: React, Node.js, SQL`,description:`Comprehensive booking system with customer management and service scheduling. Developed full-stack features for appointment handling and real-time updates.`},{title:`Smetovi (Cleaning Application)`,meta:`Practice Project | Technologies: JavaScript, Local Storage`,description:`Interactive task management application for household organization. Features data persistence and responsive interface design.`},{title:`Public Transportation System`,meta:`Practice Project | Technologies: JavaScript, APIs`,description:`Real-time bus schedules and route information system. Integrated external APIs and implemented interactive maps for better UX.`}],d=[`<strong>Youth Bank Doboj Jug</strong> - Active Member | Developed project leadership and organizational skills`,`<strong>3x3 Basketball Tournament</strong> - Organizer | Demonstrated event coordination and team management abilities`,`<strong>Radio Amateur Club</strong> - Licensed Member (E75VRM) | Enhanced communication and technical skills`,`<strong>Faculty Projects</strong> - Multiple contributions | Worked on real-world problems with practical applications`],f=[{title:`Technical`,items:[`Full-Stack Web Development`,`Problem-Solving`,`Software Architecture`,`Version Control (Git)`]},{title:`Soft Skills`,items:[`Communication`,`Project Leadership`,`Teamwork`,`Time Management`]}];function p(e,t){return`
+    <div style="${c.section}">
+      <h2 style="${c.sectionTitle}">${e}</h2>
+      ${t}
+    </div>
+  `}function m(e){return`
+    <ul style="${c.list}">
+      ${e.map(e=>`<li>${e}</li>`).join(``)}
+    </ul>
+  `}function h(e){return`
+    <div style="${c.skillGrid}">
+      ${e.map(e=>`
+            <div>
+              <h4 style="margin-top: 0;">${e.title}</h4>
+              <p style="margin: 0;">${e.items.join(`, `)}</p>
+            </div>
+          `).join(``)}
+    </div>
+  `}function g(e){return`
+    <div style="${c.competencyGrid}">
+      ${e.map(e=>`
+            <div>
+              <h4 style="margin-top: 0;">${e.title}</h4>
+              <ul style="margin: 0; padding-left: 1.5rem;">
+                ${e.items.map(e=>`<li>${e}</li>`).join(``)}
+              </ul>
+            </div>
+          `).join(``)}
+    </div>
+  `}function _(e){return`
+    <div style="${c.projectBlock}">
+      <h4 style="margin: 0 0 0.5rem;">${e.title}</h4>
+      <p style="${c.projectMeta}">${e.meta}</p>
+      <p style="margin: 0;">${e.description}</p>
+    </div>
+  `}function v(e){e.innerHTML=``;let t=r();e.appendChild(t);let a=document.createElement(`main`);a.innerHTML=`
+    <div style="${c.intro}">
       <h1>My Resume</h1>
-      <p style="color: var(--text); font-size: 1rem;">
+      <p style="${c.introText}">
         Download or view my professional resume below
       </p>
-      <button id="download-cv" class="btn btn-primary" style="margin-top: 1rem;">
+      <button id="download-cv" class="btn btn-primary" style="${c.introButton}">
         📥 Download as PDF
       </button>
     </div>
     
-    <section id="cv-content" style="background: var(--bg-secondary); padding: 2rem; border-radius: 12px; border: 1px solid var(--border);">
-      <!-- CV Header -->
-      <div style="text-align: center; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 2px solid var(--accent);">
-        <h1 style="margin: 0 0 0.5rem; font-size: 2rem;">Vedad Ramic</h1>
-        <p style="margin: 0 0 1rem; color: var(--text);">
+    <section id="cv-content" style="${c.panel}">
+      <div style="${c.header}">
+        <h1 style="${c.headerName}">Vedad Ramic</h1>
+        <p style="${c.headerTagline}">
           Computer Science Student | Full-Stack Developer | Tech Enthusiast
         </p>
-        <p style="margin: 0; font-size: 0.95rem;">
+        <p style="${c.headerMeta}">
           <strong>Email:</strong> vedad.ramic@example.com | 
           <strong>Phone:</strong> +387 (your number) | 
           <strong>Location:</strong> Doboj, Bosnia and Herzegovina
         </p>
-        <p style="margin: 0.5rem 0 0;">
+        <p style="${c.headerLinks}">
           <strong>LinkedIn:</strong> linkedin.com/in/vedad-ramic | 
           <strong>GitHub:</strong> github.com/vedadramic
         </p>
       </div>
       
-      <!-- Summary -->
-      <div style="margin-bottom: 2rem;">
-        <h2 style="color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;">Professional Summary</h2>
-        <p style="margin: 1rem 0 0;">
+      ${p(`Professional Summary`,`<p style="${c.sectionBody}">
           Computer Science student with strong passion for web development and problem-solving. Experienced in building modern web applications using full-stack technologies. Active community member with proven leadership skills. Seeking internship opportunities to apply technical knowledge and contribute to meaningful projects.
-        </p>
-      </div>
+        </p>`)}
       
-      <!-- Education -->
-      <div style="margin-bottom: 2rem;">
-        <h2 style="color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;">Education</h2>
-        <div style="margin-top: 1rem;">
+      ${p(`Education`,`
+        <div style="${c.sectionBody}">
           <h3 style="margin: 0;">Computer Science</h3>
           <p style="margin: 0.25rem 0; color: var(--text);">
             <strong>University Name</strong> | Expected Graduation: 2025/2026
           </p>
-          <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
-            <li>Relevant Coursework: Web Development, Databases, Software Engineering, Algorithms, Data Structures</li>
-            <li>Active participation in faculty projects and academic competitions</li>
-          </ul>
+          ${m([`Relevant Coursework: Web Development, Databases, Software Engineering, Algorithms, Data Structures`,`Active participation in faculty projects and academic competitions`])}
         </div>
-      </div>
+        `)}
       
-      <!-- Technical Skills -->
-      <div style="margin-bottom: 2rem;">
-        <h2 style="color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;">Technical Skills</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-          <div>
-            <h4 style="margin-top: 0;">Frontend Development</h4>
-            <p style="margin: 0;">HTML, CSS, JavaScript, React, Responsive Design, UI/UX Principles</p>
-          </div>
-          <div>
-            <h4 style="margin-top: 0;">Backend Development</h4>
-            <p style="margin: 0;">Node.js, Express.js, REST APIs, Database Design, SQL</p>
-          </div>
-          <div>
-            <h4 style="margin-top: 0;">Programming Languages</h4>
-            <p style="margin: 0;">JavaScript, Python, Java, SQL</p>
-          </div>
-          <div>
-            <h4 style="margin-top: 0;">Tools & Technologies</h4>
-            <p style="margin: 0;">Git, GitHub, Firebase, Azure, VS Code, npm/Yarn</p>
-          </div>
-        </div>
-      </div>
+      ${p(`Technical Skills`,h(l))}
       
-      <!-- Projects -->
-      <div style="margin-bottom: 2rem;">
-        <h2 style="color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;">Projects</h2>
-        
-        <div style="margin-top: 1rem;">
-          <h4 style="margin: 0 0 0.5rem;">E-Diploma Management System</h4>
-          <p style="margin: 0 0 0.5rem; color: var(--secondary); font-size: 0.95rem;">Faculty Project | Technologies: JavaScript, Node.js, Database</p>
-          <p style="margin: 0;">
-            Digital diploma management system for secure creation and distribution of academic credentials. Implemented authentication, user management, and diploma generation features.
-          </p>
-        </div>
-        
-        <div style="margin-top: 1.5rem;">
-          <h4 style="margin: 0 0 0.5rem;">Barbershop Management Application</h4>
-          <p style="margin: 0 0 0.5rem; color: var(--secondary); font-size: 0.95rem;">Faculty Project | Technologies: React, Node.js, SQL</p>
-          <p style="margin: 0;">
-            Comprehensive booking system with customer management and service scheduling. Developed full-stack features for appointment handling and real-time updates.
-          </p>
-        </div>
-        
-        <div style="margin-top: 1.5rem;">
-          <h4 style="margin: 0 0 0.5rem;">Smetovi (Cleaning Application)</h4>
-          <p style="margin: 0 0 0.5rem; color: var(--secondary); font-size: 0.95rem;">Practice Project | Technologies: JavaScript, Local Storage</p>
-          <p style="margin: 0;">
-            Interactive task management application for household organization. Features data persistence and responsive interface design.
-          </p>
-        </div>
-        
-        <div style="margin-top: 1.5rem;">
-          <h4 style="margin: 0 0 0.5rem;">Public Transportation System</h4>
-          <p style="margin: 0 0 0.5rem; color: var(--secondary); font-size: 0.95rem;">Practice Project | Technologies: JavaScript, APIs</p>
-          <p style="margin: 0;">
-            Real-time bus schedules and route information system. Integrated external APIs and implemented interactive maps for better UX.
-          </p>
-        </div>
-      </div>
+      ${p(`Projects`,u.map(_).join(``))}
       
-      <!-- Experience & Achievements -->
-      <div style="margin-bottom: 2rem;">
-        <h2 style="color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;">Experience & Achievements</h2>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-          <li><strong>Youth Bank Doboj Jug</strong> - Active Member | Developed project leadership and organizational skills</li>
-          <li><strong>3x3 Basketball Tournament</strong> - Organizer | Demonstrated event coordination and team management abilities</li>
-          <li><strong>Radio Amateur Club</strong> - Licensed Member (E75VRM) | Enhanced communication and technical skills</li>
-          <li><strong>Faculty Projects</strong> - Multiple contributions | Worked on real-world problems with practical applications</li>
-        </ul>
-      </div>
+      ${p(`Experience & Achievements`,m(d))}
       
-      <!-- Skills Summary -->
-      <div style="margin-bottom: 2rem;">
-        <h2 style="color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;">Key Competencies</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
-          <div>
-            <h4 style="margin-top: 0;">Technical</h4>
-            <ul style="margin: 0; padding-left: 1.5rem;">
-              <li>Full-Stack Web Development</li>
-              <li>Problem-Solving</li>
-              <li>Software Architecture</li>
-              <li>Version Control (Git)</li>
-            </ul>
-          </div>
-          <div>
-            <h4 style="margin-top: 0;">Soft Skills</h4>
-            <ul style="margin: 0; padding-left: 1.5rem;">
-              <li>Communication</li>
-              <li>Project Leadership</li>
-              <li>Teamwork</li>
-              <li>Time Management</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      ${p(`Key Competencies`,g(f))}
       
-      <!-- Languages -->
-      <div style="margin-bottom: 2rem;">
-        <h2 style="color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem;">Languages</h2>
-        <p style="margin: 1rem 0 0;">
+      ${p(`Languages`,`<p style="${c.sectionBody}">
           <strong>English</strong> - Fluent | <strong>Bosnian</strong> - Native | <strong>Serbian/Croatian</strong> - Fluent
-        </p>
-      </div>
-      
-      <!-- Footer Note -->
-      <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--text);">
+        </p>`)}
+
+      <div style="${c.footer}">
         <p style="margin: 0;">References and additional information available upon request</p>
       </div>
     </section>
-  `,e.appendChild(a),a.querySelector(`#download-cv`).addEventListener(`click`,n);let o=i();e.appendChild(o)}var l={"/":a,"/about":o,"/projects":s,"/cv":c};function u(){return(window.location.hash||`#/`).replace(`#`,``)||`/`}function d(){let e=l[u()]||a,t=document.querySelector(`#app`);t.innerHTML=``,e(t),f()}function f(){let e=u();document.querySelectorAll(`nav a`).forEach(t=>{t.classList.remove(`active`);let n=t.getAttribute(`href`);(e===`/`&&n===`/`||e===n)&&t.classList.add(`active`)})}window.addEventListener(`hashchange`,d),d();
+  `,e.appendChild(a),a.querySelector(`#download-cv`)?.addEventListener(`click`,n);let o=i();e.appendChild(o)}var y={"/":a,"/about":o,"/projects":s,"/cv":v};function b(){return(window.location.hash||`#/`).replace(`#`,``)||`/`}function x(){let e=y[b()]||a,t=document.querySelector(`#app`);t&&(e(t),S())}function S(){let e=b();document.querySelectorAll(`nav .nav-links a`).forEach(t=>{let n=(t.getAttribute(`href`)||``).replace(`#`,``)||`/`;t.classList.toggle(`active`,n===e)})}window.addEventListener(`hashchange`,x),x();
