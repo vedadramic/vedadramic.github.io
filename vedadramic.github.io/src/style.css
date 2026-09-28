@@ -29,6 +29,7 @@
 
 html {
   min-width: 320px;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -532,9 +533,10 @@ footer {
   .nav-menu {
     position: absolute;
     top: calc(100% + 0.5rem);
-    right: 1rem;
+    left: 50%;
+    right: auto;
     display: flex;
-    width: min(320px, calc(100vw - 2rem));
+    width: min(360px, calc(100% - 2rem));
     padding: 1.25rem;
     flex-direction: column;
     align-items: stretch;
@@ -544,8 +546,8 @@ footer {
     background: rgba(17, 34, 64, 0.98);
     box-shadow: 0 24px 54px -24px var(--navy-shadow);
     opacity: 0;
-    transform: translateY(-10px) scale(0.98);
-    transform-origin: top right;
+    transform: translate(-50%, -10px) scale(0.98);
+    transform-origin: top center;
     visibility: hidden;
     transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
   }
@@ -553,7 +555,7 @@ footer {
   .nav-links { flex-direction: column; align-items: stretch; gap: 0.25rem; }
   .nav-link { width: 100%; padding: 0.55rem; justify-content: center; }
   .nav-actions, .nav-download-btn { width: 100%; }
-  .menu-open .nav-menu { opacity: 1; transform: translateY(0) scale(1); visibility: visible; }
+  .menu-open .nav-menu { opacity: 1; transform: translate(-50%, 0) scale(1); visibility: visible; }
   .menu-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
   .menu-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
