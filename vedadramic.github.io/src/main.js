@@ -27,6 +27,11 @@ function render() {
 
   pageRenderer(app)
   updateActiveNavLink()
+  document.title = `${page === '/' ? 'Home' : page.slice(1).replace(/^./, char => char.toUpperCase())} | Vedad Ramić`
+
+  if (window.location.hash) {
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }
 }
 
 // Update active nav link
@@ -36,6 +41,11 @@ function updateActiveNavLink() {
     const href = link.getAttribute('href') || ''
     const route = href.replace('#', '') || '/'
     link.classList.toggle('active', route === page)
+    if (route === page) {
+      link.setAttribute('aria-current', 'page')
+    } else {
+      link.removeAttribute('aria-current')
+    }
   })
 }
 
