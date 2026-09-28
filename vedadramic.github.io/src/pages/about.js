@@ -119,7 +119,6 @@ export function renderAbout(app) {
           If you liked what you saw or would like to know more about me, feel free to contact me through any of my social media platforms.
         </p>
         <div class="contact-links">
-          <a href="mailto:vedo.ramic02@gmail.com" class="button button--primary">Email Me</a>
           <a href="https://www.linkedin.com/in/vedad-ramic/" target="_blank" rel="noopener noreferrer" class="text-link">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
