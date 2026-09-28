@@ -24,7 +24,6 @@
     </div>
   `;let i=r.querySelector(`.nav-toggle`),a=()=>{r.classList.remove(`menu-open`),i?.setAttribute(`aria-expanded`,`false`)};return i?.addEventListener(`click`,()=>{let e=r.classList.toggle(`menu-open`);i.setAttribute(`aria-expanded`,String(e))}),r.querySelectorAll(`.nav-links a`).forEach(e=>{e.addEventListener(`click`,a)}),r.querySelector(`.nav-download-btn`)?.addEventListener(`click`,a),r.addEventListener(`keydown`,e=>{e.key===`Escape`&&(a(),i?.focus())}),e.append(n,r),e}function r(){let e=document.createElement(`footer`);return e.innerHTML=`
     <div class="footer-container">
-      <a class="footer-email" href="mailto:vedo.ramic02@gmail.com">vedo.ramic02@gmail.com</a>
       <div class="social-links" aria-label="Social media links">
           <a href="https://www.linkedin.com/in/vedad-ramic/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn (opens in a new tab)">
             <img src="/linkedin.png" alt="" class="social-icon">
@@ -170,7 +169,6 @@
           If you liked what you saw or would like to know more about me, feel free to contact me through any of my social media platforms.
         </p>
         <div class="contact-links">
-          <a href="mailto:vedo.ramic02@gmail.com" class="button button--primary">Email Me</a>
           <a href="https://www.linkedin.com/in/vedad-ramic/" target="_blank" rel="noopener noreferrer" class="text-link">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
